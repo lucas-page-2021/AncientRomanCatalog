@@ -108,10 +108,9 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px;
   border-radius: 26px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.46);
+  background: transparent;
   box-shadow: 0 18px 30px var(--shadow);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
@@ -162,8 +161,6 @@ h1 {
 .detail-card img {
   width: 100%;
   aspect-ratio: 0.9;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.56);
   object-fit: contain;
   object-position: center;
   border-radius: 22px;
