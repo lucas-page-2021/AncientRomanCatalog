@@ -135,6 +135,87 @@ h1 {
   letter-spacing: 0.08em;
 }
 
+.details {
+  display: grid;
+  gap: 28px;
+  padding: 72px 82px 0;
+}
+
+.detail-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 22px;
+  border: 2px solid rgba(11, 86, 196, 0.14);
+  border-radius: 28px;
+  background: rgba(255, 252, 244, 0.52);
+  box-shadow: 0 20px 34px rgba(17, 38, 80, 0.08);
+}
+
+.detail-card img {
+  width: 100%;
+  aspect-ratio: 0.9;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.detail-copy h2,
+.sources h2 {
+  margin: 0;
+  font-family: var(--display-font);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 0.95;
+}
+
+.detail-copy p,
+.sources p,
+.sources li {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.detail-kicker {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.price {
+  margin: 16px 0 8px;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.price span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.96rem;
+  opacity: 0.72;
+}
+
+.detail-note {
+  margin: 0;
+  padding-left: 14px;
+  border-left: 3px solid rgba(11, 86, 196, 0.28);
+}
+
+.sources {
+  padding: 58px 82px 0;
+}
+
+.sources ul {
+  margin: 18px 0 0;
+  padding-left: 22px;
+}
+
+.sources a {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .pattern {
   position: absolute;
   pointer-events: none;
@@ -213,6 +294,12 @@ h1 {
     padding-left: 34px;
   }
 
+  .details,
+  .sources {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
   .pattern-left {
     width: 96px;
   }
@@ -238,8 +325,17 @@ h1 {
     padding: 18px 20px 0;
   }
 
+  .detail-card {
+    grid-template-columns: 1fr;
+  }
+
   .art {
     max-width: 360px;
+  }
+
+  .details,
+  .sources {
+    padding: 42px 20px 0;
   }
 
   .footer {
