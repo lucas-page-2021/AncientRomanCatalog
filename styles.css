@@ -276,27 +276,6 @@ h1 {
     linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
-.pattern-top-right,
-.pattern-bottom-left {
-  width: 190px;
-  height: 300px;
-  opacity: 1;
-  background:
-    radial-gradient(circle at 14px 14px, transparent 11px, var(--ink) 12px, var(--ink) 14px, transparent 15px) 0 0 / 38px 38px,
-    linear-gradient(var(--ink), var(--ink)) 0 19px / 100% 4px repeat-y;
-  mask: linear-gradient(180deg, #000 0%, #000 100%);
-}
-
-.pattern-top-right {
-  top: 6px;
-  right: -18px;
-}
-
-.pattern-bottom-left {
-  bottom: 44px;
-  left: -18px;
-}
-
 .corner-mark {
   position: absolute;
   right: 34px;
@@ -349,11 +328,6 @@ h1 {
     width: 96px;
   }
 
-  .pattern-top-right,
-  .pattern-bottom-left {
-    width: 126px;
-    height: 200px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -389,8 +363,6 @@ h1 {
   }
 
   .pattern-left,
-  .pattern-top-right,
-  .pattern-bottom-left,
   .corner-mark {
     opacity: 0.5;
   }
