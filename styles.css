@@ -195,6 +195,13 @@ h1 {
   line-height: 0.95;
 }
 
+.detail-title {
+  margin: 0;
+  font-family: var(--display-font);
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  line-height: 0.95;
+}
+
 .detail-copy p,
 .sources p,
 .sources li {
@@ -241,6 +248,37 @@ h1 {
 .sources a {
   text-decoration: underline;
   text-underline-offset: 0.18em;
+}
+
+.detail-page {
+  padding: 26px 82px 0;
+}
+
+.detail-card-page {
+  margin-top: 18px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid rgba(11, 86, 196, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.44);
+  font-size: 0.98rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.back-link::before {
+  content: "<";
+  font-size: 1rem;
 }
 
 .pattern {
@@ -322,7 +360,8 @@ h1 {
   }
 
   .details,
-  .sources {
+  .sources,
+  .detail-page {
     padding-left: 34px;
     padding-right: 34px;
   }
@@ -361,7 +400,8 @@ h1 {
   }
 
   .details,
-  .sources {
+  .sources,
+  .detail-page {
     padding: 42px 20px 0;
   }
 
