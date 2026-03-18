@@ -163,6 +163,12 @@ h1 {
   align-items: start;
 }
 
+.detail-card-split {
+  display: grid;
+  grid-template-columns: minmax(200px, 250px) minmax(0, 1fr) minmax(200px, 250px);
+  align-items: start;
+}
+
 .detail-card img {
   width: 100%;
   aspect-ratio: 0.9;
@@ -179,6 +185,11 @@ h1 {
 .detail-figures-side {
   align-content: start;
   justify-items: center;
+}
+
+.detail-side {
+  display: flex;
+  justify-content: center;
 }
 
 .detail-figure {
@@ -220,13 +231,8 @@ h1 {
   max-width: 250px;
 }
 
-.item-tunica.detail-card-balanced,
-.item-toga.detail-card-balanced {
-  grid-template-columns: minmax(200px, 250px) minmax(0, 1fr) minmax(200px, 250px);
-}
-
-.item-tunica .detail-figures-left,
-.item-toga .detail-figures-left {
+.item-tunica .detail-side-left,
+.item-toga .detail-side-left {
   grid-column: 1;
 }
 
@@ -235,8 +241,8 @@ h1 {
   grid-column: 2;
 }
 
-.item-tunica .detail-figures-right,
-.item-toga .detail-figures-right {
+.item-tunica .detail-side-right,
+.item-toga .detail-side-right {
   grid-column: 3;
 }
 
@@ -463,6 +469,10 @@ h1 {
   }
 
   .detail-card-balanced {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-card-split {
     grid-template-columns: 1fr;
   }
 
