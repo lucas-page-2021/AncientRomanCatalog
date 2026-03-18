@@ -158,6 +158,11 @@ h1 {
   box-shadow: 0 20px 34px rgba(17, 38, 80, 0.08);
 }
 
+.detail-card-balanced {
+  grid-template-columns: minmax(180px, 260px) minmax(0, 1fr) minmax(180px, 260px);
+  align-items: start;
+}
+
 .detail-card img {
   width: 100%;
   aspect-ratio: 0.9;
@@ -169,6 +174,10 @@ h1 {
 .detail-figures {
   display: grid;
   gap: 18px;
+}
+
+.detail-figures-side {
+  align-content: start;
 }
 
 .detail-figure {
@@ -386,6 +395,10 @@ h1 {
   }
 
   .detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-card-balanced {
     grid-template-columns: 1fr;
   }
 
