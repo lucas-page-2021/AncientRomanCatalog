@@ -173,6 +173,9 @@ h1 {
 
 .detail-figure {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .detail-figure figcaption {
@@ -182,6 +185,26 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   opacity: 0.78;
+}
+
+.item-jewelry .detail-figure img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.item-jewelry .figure-armilla img {
+  max-width: 88%;
+}
+
+.item-jewelry .figure-inaures img {
+  max-width: 76%;
+}
+
+.item-jewelry .figure-monile img {
+  max-width: 92%;
 }
 
 .detail-copy h2,
