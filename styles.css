@@ -220,6 +220,26 @@ h1 {
   max-width: 250px;
 }
 
+.item-tunica.detail-card-balanced,
+.item-toga.detail-card-balanced {
+  grid-template-columns: minmax(200px, 250px) minmax(0, 1fr) minmax(200px, 250px);
+}
+
+.item-tunica .detail-figures-left,
+.item-toga .detail-figures-left {
+  grid-column: 1;
+}
+
+.item-tunica .detail-copy,
+.item-toga .detail-copy {
+  grid-column: 2;
+}
+
+.item-tunica .detail-figures-right,
+.item-toga .detail-figures-right {
+  grid-column: 3;
+}
+
 .item-shoes .detail-figure img {
   max-width: 220px;
 }
