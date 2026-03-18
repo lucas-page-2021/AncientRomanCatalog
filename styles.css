@@ -224,6 +224,22 @@ h1 {
   max-width: 220px;
 }
 
+.item-shoes.detail-card-balanced {
+  grid-template-columns: minmax(200px, 250px) minmax(0, 1fr) minmax(200px, 250px);
+}
+
+.item-shoes .detail-figures-left {
+  grid-column: 1;
+}
+
+.item-shoes .detail-copy {
+  grid-column: 2;
+}
+
+.item-shoes .detail-figures-right {
+  grid-column: 3;
+}
+
 .item-jewelry .detail-figure img {
   width: 100%;
   height: auto;
