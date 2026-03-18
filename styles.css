@@ -178,6 +178,7 @@ h1 {
 
 .detail-figures-side {
   align-content: start;
+  justify-items: center;
 }
 
 .detail-figure {
@@ -194,6 +195,33 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   opacity: 0.78;
+}
+
+.detail-card-balanced .detail-figure {
+  width: 100%;
+}
+
+.detail-card-balanced .detail-figure img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.item-tunica .detail-figures-side,
+.item-toga .detail-figures-side,
+.item-shoes .detail-figures-side {
+  gap: 24px;
+}
+
+.item-tunica .detail-figure img,
+.item-toga .detail-figure img {
+  max-width: 250px;
+}
+
+.item-shoes .detail-figure img {
+  max-width: 220px;
 }
 
 .item-jewelry .detail-figure img {
